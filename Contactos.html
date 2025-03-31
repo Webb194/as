@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with JohnDoe landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Contactos | AutoExpress</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + JohnDoe main styles -->
+    <link rel="stylesheet" href="assets/css/johndoe.css">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    <a href="components.html" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600"><i
+            class="ti-shift-left-alt"></i> Components</a>
+    <header class="header">
+        <!-- Video de fondo -->
+        <video autoplay loop muted playsinline class="video-bg">
+            <source src="assets/imgs/Lavado.mp4" type="video/mp4">
+            Tu navegador no soporta videos en HTML5.
+        </video>
+
+        <div class="container">
+            <ul class="social-icons pt-3">
+                <li class="social-item">
+                    <a class="social-link text-light" href="https://www.facebook.com/TU_PAGINA" target="_blank">
+                        <i class="ti-facebook" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a class="social-link text-light" href="https://twitter.com/TU_USUARIO" target="_blank">
+                        <i class="ti-twitter" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a class="social-link text-light" href="https://www.instagram.com/jared_hyuga?igsh=MnMxczZrb3h6a281" target="_blank">
+                        <i class="ti-instagram" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+            
+
+            <div class="header-content">
+                <h4 class="header-subtitle">🚗 "Tu auto, seguro y reluciente en un solo lugar."</h4>
+                <h1 class="header-title">Lavado AutoExpress</h1>
+                <h6 class="header-mono">
+                    <a href="URL_DEL_INICIO_DE_SESION" class="login-link">Regístrate | Inicia Sesión</a>
+                </h6>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
+        <div class="container">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+
+
+
+
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Resumen</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav brand">
+                    <li class="brand-video">
+                        <video src="assets/imgs/Lavado.mp4" class="video" autoplay loop muted></video>
+                    </li>
+
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="Portafolio.html" class="nav-link">Nuestros Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Blog.html" class="nav-link">Comentarios</a>
+                    </li>
+                    <li class="nav-item last-item">
+                        <a href="Contactos.html" class="nav-link">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="section contact" id="contact">
+        <div id="map" class="map"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="contact-form-card">
+                        <h4 class="contact-title">Envía Un Mensaje</h4>
+                        <form action="">
+                            <div class="form-group">
+                                <input class="form-control" type="text" placeholder="Nombre *" required>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="email" placeholder="Correo Electrónico *" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" id=" placeholder=" Message *" rows="7"
+                                    required></textarea>
+                            </div>
+                            
+
+
+
+                <button type="button" class="form-control btn btn-primary" onclick="sendEmail()">
+                    Envía Un Mensaje
+                </button>
+            </form>
+        </div>
+    </div>
+    
+    <script>
+        function sendEmail() {
+            // Obtener los valores del formulario
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+    
+            // Crear el enlace de mailto con los datos
+            var mailtoLink = "mailto:jaredlopez076@gmail.com"
+                + "?subject=Nuevo Mensaje de " + encodeURIComponent(name)
+                + "&body=Nombre: " + encodeURIComponent(name) 
+                + "%0AEmail: " + encodeURIComponent(email) 
+                + "%0AMensaje: " + encodeURIComponent(message);
+    
+            // Abrir el cliente de correo con los datos
+            window.location.href = mailtoLink;
+        }
+    </script>
+                <div class="col-lg-4">
+                    <div class="contact-info-card">
+                        <h4 class="contact-title">Informacón:</h4>
+                        <div class="row mb-2">
+                            <div class="col-1 pt-1 mr-1">
+                                <i class="ti-mobile icon-md"></i>
+                            </div>
+                            <div class="col-10 ">
+                                <h6 class="d-inline">Teléfono : <br> <span class="text-muted">+ (52) 557-514-6974</span>
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-1 pt-1 mr-1">
+                                <i class="ti-map-alt icon-md"></i>
+                            </div>
+                            <div class="col-10">
+                                <a
+                                    href="https://www.google.com.mx/maps/place/Tecnol%C3%B3gico+de+Estudios+Superiores+de+San+Felipe+del+Progreso/@19.7312199,-99.9585453,18z/data=!4m6!3m5!1s0x85d2f4fc0e536f6f:0x339683fe7db3fb8f!8m2!3d19.7312103!4d-99.9577829!16s%2Fg%2F1vtqwg0c?entry=ttu&g_ep=EgoyMDI1MDMyNS4xIKXMDSoASAFQAw%3D%3D">
+                                    <button style="padding: 10px 20px; font-size: 16px; background-color:
+                                     #007bff; color: white; border: none; border-radius: 5px; cursor: pointer;">
+                                        📍 Ver Ubicación
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-1 pt-1 mr-1">
+                                <i class="ti-envelope icon-md"></i>
+                            </div>
+                            <div class="col-10">
+                                <h6 class="d-inline">Correo Electrónico :<br> <span
+                                        class="text-muted">jaredlopez076@gmail.com</span></h6>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer class="footer py-3">
+        <div class="container">
+            <p class="small mb-0 text-light">
+                &copy;
+                <script>document.write(new Date().getFullYear())</script> AUTOEXPRESS <i
+                    class="ti-heart text-danger"></i> <a href="http://devcrud.com" target="_blank">Todos los Derechos
+                    reservados<span class="text-danger" title="Bootstrap 4 Themes and Dashboards">.</span></a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Isotope  -->
+    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+
+    <!-- Google Maps -->
+    <script>
+        function initMap() {
+            const location = { lat: 19.7206799, lng: -99.9503036 };
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 14.96,
+                center: location,
+            });
+            const marker = new google.maps.Marker({
+                position: location,
+                map: map,
+            });
+        }
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
+
+    <!-- JohnDoe js -->
+    <script src="assets/js/johndoe.js"></script>
+
+</body>
+
+</html>
